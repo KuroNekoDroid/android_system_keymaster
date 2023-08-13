@@ -48,6 +48,9 @@ license {
 cc_defaults {
     name: "keymaster_defaults",
     vendor_available: true,
+    lto: {
+        never: true,
+    },
     cflags: [
         "-Wall",
         "-Werror",
